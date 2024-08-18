@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Meu Blog
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static "blog/index.css" %}">
+{% endblock %}
+
+{% block content %}
+
+<header id="main-navigation">
+<h1>Bem-vindo ao Blog <a href="">Luis'Blog</a></h1>
+<nav>
+    <a href="">All Posts</a>
+</nav>
+</header>
+
+<section id="welcome">
+
+    <header> 
+        <img src="{% static "blog/images/foto.png" %}" alt="Luis - Autor">
+        <h2>Luis' Blog</h2>
+    </header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ex reiciendis qui est esse quisquam, similique perferendis animi sint odit, error consequatur accusantium aliquid ipsum porro vitae dolorem dolor quo?
+    </p>
+</section>
+
+<section id="latest-posts">
+    <h2>Meus últimos posts</h2>
+    <ul>
+        <li>
+            <article class="post">
+                <a href="">
+                    <img src="{% static "blog/images/f16.webp" %}" alt="Qualquer Coisa">
+                    <div class="post__content"></div>
+                    <h3>Virando Pai</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, repellat? Dignissimos cumque quis quia beatae!</p>
+                </a>
+            </article>
+        </li>
+    </ul>
+</section>
+
+<section id="about">
+    <h2>Sobre mim</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ex reiciendis qui est esse quisquam, similique perferendis animi sint odit, error consequatur accusantium aliquid ipsum porro vitae dolorem dolor quo?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet non ipsa et similique sapiente repudiandae sed debitis culpa, odio consequuntur?</p>
+</section>
+{% endblock %}
+
